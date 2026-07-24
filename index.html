@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditya Sharma — Backend Engineer</title>
+<meta name="description" content="Backend Engineer with 3+ years building high-scale server-side systems in Python and PHP — real-time platforms, geospatial services, and performant APIs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =========================================================
+     LENS FILTERS
+     Liquid Glass is not noise. It is a bezel: a rounded-rectangle
+     surface that is flat through the middle and curves sharply at the
+     rim. script.js computes that surface per panel and encodes its
+     normals into a displacement map, which gets injected here.
+     ========================================================= -->
+<svg class="filter-defs" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs id="lens-defs">
+    <!-- Fine grain, so the backdrop has detail worth bending -->
+    <filter id="lg-grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7"
+                    numOctaves="3" seed="8"/>
+    </filter>
+  </defs>
+</svg>
+
+<!-- ============ AMBIENT BACKDROP (the thing the glass refracts) ============ -->
+<div class="backdrop" aria-hidden="true">
+  <div class="bloom bloom-a"></div>
+  <div class="bloom bloom-b"></div>
+  <div class="bloom bloom-c"></div>
+  <div class="grid-field"></div>
+  <div class="grain"></div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav-wrap">
+  <nav class="nav glass" aria-label="Main">
+    <a class="nav-mark" href="#top">AS</a>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="Aditya_Resume.pdf" download>Resume</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <p class="eyebrow mono">Backend Engineer · Faridabad, India · Open to remote roles</p>
+    <h1 class="hero-title">
+      I build the <em>systems</em><br>users never see.
+    </h1>
+    <p class="hero-sub">
+      Backend Engineer with 3+ years building high-scale server-side
+      architectures in Python (Django, FastAPI) and PHP. I care about clean
+      code, well-designed APIs, and databases that stay fast under real load.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#projects">See the work</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat glass">
+        <span class="stat-num">3+</span>
+        <span class="stat-label mono">Years shipping</span>
+      </div>
+      <div class="stat glass">
+        <span class="stat-num">40–50%</span>
+        <span class="stat-label mono">Faster queries</span>
+      </div>
+      <div class="stat glass">
+        <span class="stat-num">30%</span>
+        <span class="stat-label mono">Lower latency</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="work" class="section">
+    <h2 class="section-title">Experience</h2>
+
+    <ol class="timeline">
+      <li class="tl-item glass">
+        <div class="tl-meta mono"><span class="tl-date">Sep 2025 — Present</span></div>
+        <div class="tl-body">
+          <h3>Backend Engineer</h3>
+          <p class="tl-org">NMG Technologies</p>
+          <ul class="tl-points">
+            <li>Engineered the core backend for a golf-based fantasy betting
+                platform — concurrent user-generated contests, dynamic lineups,
+                and peer-to-peer invitation workflows.</li>
+            <li>Built a real-time location tracking engine for the plowpros
+                navigation system, handling high-frequency geospatial streams and
+                cutting transmission latency by 30%.</li>
+            <li>Delivered scalable REST APIs over a hybrid MySQL + MongoDB layer,
+                and integrated Stripe billing plus Twilio/Firebase notifications.</li>
+            <li>Set up AWS (S3, CodeCommit) and Jenkins CI/CD, cutting deployment
+                cycles by 25% through test automation.</li>
+          </ul>
+          <p class="tag-row mono">
+            <span class="tag">Python</span>
+            <span class="tag">Django</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">AWS</span>
+          </p>
+        </div>
+      </li>
+
+      <li class="tl-item glass">
+        <div class="tl-meta mono"><span class="tl-date">Jan 2023 — Aug 2025</span></div>
+        <div class="tl-body">
+          <h3>Backend Developer</h3>
+          <p class="tl-org">AnuationLabs</p>
+          <ul class="tl-points">
+            <li>Built a custom Python web scraper and automated data pipeline,
+                speeding up internal data retrieval and reporting.</li>
+            <li>Designed and optimized complex database schemas, reducing query
+                response times by 40–50% and lifting core system performance.</li>
+            <li>Built high-throughput REST APIs in Python, Node.js, and PHP;
+                integrated Razorpay and token-based authentication.</li>
+            <li>Refactored legacy server-side code to modern design patterns,
+                improving maintainability and cutting production bugs.</li>
+          </ul>
+          <p class="tag-row mono">
+            <span class="tag">Python</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">PHP</span>
+            <span class="tag">Laravel</span>
+          </p>
+        </div>
+      </li>
+
+      <li class="tl-item glass">
+        <div class="tl-meta mono"><span class="tl-date">Aug 2022 — Dec 2022</span></div>
+        <div class="tl-body">
+          <h3>Web Developer Intern</h3>
+          <p class="tl-org">AnuationLabs</p>
+          <ul class="tl-points">
+            <li>Built and maintained PHP/Laravel applications alongside senior
+                engineers, shipping core micro-features.</li>
+            <li>Tuned SQL queries to improve data-retrieval efficiency and wrote
+                technical documentation and internal user guides.</li>
+          </ul>
+          <p class="tag-row mono">
+            <span class="tag">PHP</span>
+            <span class="tag">Laravel</span>
+            <span class="tag">SQL</span>
+          </p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Selected work</h2>
+    <p class="section-note">Highlights from the platforms I've built at NMG Technologies.</p>
+
+    <div class="project-grid">
+
+      <article class="card glass">
+        <header class="card-head">
+          <h3>Fantasy Betting Platform</h3>
+          <span class="card-kind mono">Real-time</span>
+        </header>
+        <p class="card-problem">
+          A golf fantasy platform where contests are user-generated, with dynamic
+          lineups and peer-to-peer invites — the data model had to stay consistent
+          while many users built and joined contests at once.
+        </p>
+        <p class="card-approach">
+          Designed the core relational architecture behind concurrent contests,
+          lineup management, and the invitation workflows that tie players together.
+        </p>
+        <p class="card-result mono">→ Backbone for concurrent contests and live participation.</p>
+        <p class="tag-row mono">
+          <span class="tag">Python</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">MongoDB</span>
+        </p>
+      </article>
+
+      <article class="card glass">
+        <header class="card-head">
+          <h3>plowpros Location Engine</h3>
+          <span class="card-kind mono">Geospatial</span>
+        </header>
+        <p class="card-problem">
+          A navigation system ingesting high-frequency geospatial streams needed to
+          move location data with as little delay as possible.
+        </p>
+        <p class="card-approach">
+          Built a real-time location tracking engine tuned for high-frequency data,
+          served through REST APIs over a hybrid MySQL + MongoDB layer.
+        </p>
+        <p class="card-result mono">→ Reduced transmission latency by 30%.</p>
+        <p class="tag-row mono">
+          <span class="tag">Python</span>
+          <span class="tag">Geospatial</span>
+          <span class="tag">MongoDB</span>
+        </p>
+      </article>
+
+      <article class="card glass">
+        <header class="card-head">
+          <h3>Live Leaderboard Engine</h3>
+          <span class="card-kind mono">Data pipeline</span>
+        </header>
+        <p class="card-problem">
+          Live tournament standings had to reflect a stream of user scores under
+          peak traffic without falling behind.
+        </p>
+        <p class="card-approach">
+          Built a fine-tuned leaderboard computation algorithm with rapid data
+          aggregation to keep standings current during load.
+        </p>
+        <p class="card-result mono">→ Processed scores efficiently at peak traffic.</p>
+        <p class="tag-row mono">
+          <span class="tag">Python</span>
+          <span class="tag">Caching</span>
+          <span class="tag">Aggregation</span>
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section">
+    <h2 class="section-title">Toolkit</h2>
+
+    <div class="skill-grid">
+      <div class="skill-block glass">
+        <h3 class="mono">Languages</h3>
+        <p>Python · PHP · JavaScript · Node.js · SQL · NoSQL</p>
+      </div>
+      <div class="skill-block glass">
+        <h3 class="mono">Frameworks</h3>
+        <p>Django · FastAPI · Laravel · Express.js · React · Vue</p>
+      </div>
+      <div class="skill-block glass">
+        <h3 class="mono">Backend &amp; APIs</h3>
+        <p>REST · MVC · ORM (Django ORM, Eloquent) · JWT / OAuth / Sanctum · RBAC · Web scraping</p>
+      </div>
+      <div class="skill-block glass">
+        <h3 class="mono">Databases</h3>
+        <p>PostgreSQL · MySQL · MongoDB · SQLite3</p>
+      </div>
+      <div class="skill-block glass">
+        <h3 class="mono">Cloud &amp; DevOps</h3>
+        <p>AWS (S3, CodeCommit) · Jenkins · Git · GitHub</p>
+      </div>
+      <div class="skill-block glass">
+        <h3 class="mono">Integrations</h3>
+        <p>Stripe · Razorpay · Twilio (SMS/WhatsApp) · Firebase</p>
+      </div>
+      <div class="skill-block glass">
+        <h3 class="mono">AI Tooling</h3>
+        <p>Claude · Claude Code · AI-assisted development · Prompt engineering</p>
+      </div>
+      <div class="skill-block glass">
+        <h3 class="mono">Concepts</h3>
+        <p>Query optimization · Caching strategies · Code optimization</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CREDENTIALS ============ -->
+  <section id="credentials" class="section">
+    <h2 class="section-title">Education &amp; certifications</h2>
+
+    <div class="cred-grid">
+      <div class="cred-block glass">
+        <h3 class="cred-head mono">Education</h3>
+        <div class="cred-item">
+          <div class="cred-line">
+            <span class="cred-title">Bachelor of Computer Applications (BCA)</span>
+            <span class="cred-date mono">2023 — Present</span>
+          </div>
+          <p class="cred-org">IGNOU</p>
+        </div>
+        <div class="cred-item">
+          <div class="cred-line">
+            <span class="cred-title">Diploma in Computer Science</span>
+            <span class="cred-date mono">2019 — 2022</span>
+          </div>
+          <p class="cred-org">Aditya Institute of Technology</p>
+        </div>
+      </div>
+
+      <div class="cred-block glass">
+        <h3 class="cred-head mono">Certifications</h3>
+        <div class="cred-item">
+          <div class="cred-line">
+            <span class="cred-title">Python Programming</span>
+            <span class="cred-date mono">2026</span>
+          </div>
+          <p class="cred-org">TuteDude — OOP, data structures, backend automation</p>
+        </div>
+        <div class="cred-item">
+          <div class="cred-line">
+            <span class="cred-title">Full-Stack Web Development</span>
+            <span class="cred-date mono">2022</span>
+          </div>
+          <p class="cred-org">Internshala — web architecture, APIs, databases</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section section-contact">
+    <div class="contact-panel glass">
+      <h2 class="contact-title">Looking for a backend engineer?</h2>
+      <p class="contact-sub">
+        I'm open to remote and hybrid roles. Email is the fastest way to reach me.
+      </p>
+      <a class="btn btn-primary" href="mailto:adisharma14500@gmail.com">adisharma14500@gmail.com</a>
+      <ul class="social mono">
+        <li><a href="https://github.com/aadidotin" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/aadidotin" target="_blank">LinkedIn</a></li>
+        <li><a href="Aditya_Resume.pdf" download>Resume (PDF)</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer mono">
+  <span>© <span id="year">2026</span> Aditya Sharma</span>
+  <span>Built with HTML, CSS and JavaScript. No frameworks.</span>
+</footer>
+
+<script src="lens.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
